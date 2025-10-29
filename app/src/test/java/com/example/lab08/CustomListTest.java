@@ -18,6 +18,6 @@ public class CustomListTest {
         CustomList cityList = mockCityList();
         City city = new City("Calgary", "Alberta");
         cityList.addCity(city);
-        assertEquals(0,cityList.hasCity(city));
+        assertEquals(true,cityList.hasCity(city));
     }
 }
