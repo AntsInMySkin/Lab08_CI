@@ -16,6 +16,16 @@ public class CustomList {
 
     public void delCity(City city) {cities.remove(city);}
 
+    /*
+    public int countCity() {
+        if (cities == null) {
+            return 0;
+        }
+        return cities.size();
+    }
+    */
+
+
     
 
     // Will be implemented later using TDD (leave blank for now)
