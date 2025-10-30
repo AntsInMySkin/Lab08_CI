@@ -2,6 +2,9 @@ package com.example.lab08;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Arrays;
+
 public class CustomListTest {
     private CustomList mockCityList(){
         CustomList cityList = new CustomList();
@@ -19,5 +22,14 @@ public class CustomListTest {
         City city = new City("Calgary", "Alberta");
         cityList.addCity(city);
         assertEquals(true,cityList.hasCity(city));
+    }
+
+    @Test
+    public void mockDelCity(){
+        CustomList cityList = mockCityList();
+        City city = new City("Calgary", "Alberta");
+        cityList.delCity(city);
+        //assertEquals(true,cityList.delCity(city));
+        assertFalse(Arrays.asList(cityList).contains(city));
     }
 }
