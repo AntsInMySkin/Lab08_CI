@@ -14,7 +14,7 @@ public class CustomList {
         cities.add(city);
     }
 
-    //public void delCity(City city) {cities.remove(city);}
+    public void delCity(City city) {cities.remove(city);}
 
     
 
